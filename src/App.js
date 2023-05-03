@@ -5,6 +5,7 @@ function App() {
    const [peopleArr, setPeopleArr] = useState([])
    const handleChange = (e)=>{
     const name = e.target.name
+    console.log(name)
     const value = e.target.value
     let newPerson = {...person, [name]:value}
     setPerson({...newPerson, id:new Date().getTime().toString()})
