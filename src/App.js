@@ -6,6 +6,7 @@ function App() {
    const handleChange = (e)=>{
     const name = e.target.name
     console.log(name)
+    console.log("hello harbouch")
     const value = e.target.value
     let newPerson = {...person, [name]:value}
     setPerson({...newPerson, id:new Date().getTime().toString()})
